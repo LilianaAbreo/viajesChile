@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 /* Reseteando propiedades de margin y padding a 0, color para la fuente y fuente requerida */
 *{
     margin: 0;
     padding: 0;
     color: white;
+    font-family: 'Poppins', sans-serif;
 }
 /* Smooth Scroll */
 html{
@@ -63,7 +65,7 @@ body{
 /* Color de fondo de los iconos */
 .ref{
     text-align: center;
-    background-color: #53f4ff;
+    background-color: #00b7ff;
     padding: 5px;
 }
 /* Margin con respecto a la info anterios */
@@ -90,7 +92,7 @@ body{
 }
 /* Color de fondo del body de las cards */
 .card-body{
-    background-color: #53f4ff;
+    background-color: #00b7ff;
 }
 
 .formulario{
@@ -114,9 +116,35 @@ body{
 }
 
 .formulario button{
-    background-color: #53f4ff;
+    background-color: #00b7ff;
     width: 100px;
     height: 40px;
     font-weight: bold;
     border-radius: 5px;
+}
+
+.piePagina{
+    background-color: #00b7ff;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .grilla{
+        grid-template-columns: 1fr;
+    }
+
+    .grilla div{
+        margin-bottom: 25px;
+    }
+
+    .carousel{
+        height: 500px;
+    }
+    .imagenCarousel{
+        height: 500px;
+    }
+
+    .grilla-destacados{
+        grid-template-columns: 1fr;
+    }
 }

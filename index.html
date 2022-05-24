@@ -37,7 +37,7 @@
                         <a class="nav-link" href="#destcdos">Destacados</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="#contact">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -81,7 +81,7 @@
             <div id="sobreNosotros" class="info">
                 <h1>¿Quienes Somos?</h1>
                 <div class="grilla">
-                    <div class="first">
+                    <div >
                         <div class="ref">
                         <i class="fa-solid fa-plane fa-1x"></i>
                     </div>
@@ -89,7 +89,7 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </p>
                     </div>
-                    <div class="second">
+                    <div >
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </p>
@@ -97,7 +97,7 @@
                             <i class="fa-solid fa-mountain fa-1x"></i>
                         </div>
                     </div>
-                    <div class="third">
+                    <div >
                     <div class="ref">
                         <i class="fa-solid fa-route fa-1x"></i>
                     </div>
@@ -145,7 +145,7 @@
             <!-- Fin destacados -->
             <!-- Formulario de contacto -->
             <div class="formulario">
-                <form>
+                <form id="contact">
                     <h1>Contacto</h1>
                     <label for="nombre">Nombre</label>
                     <input id="nombre" type="text">
@@ -160,13 +160,36 @@
         </div>
     </section>
     <!-- Inicio Footer -->
-    <footer>
-
+    <footer class="piePagina">
+    <div class="container">
+        <div class="d-flex align-items-center p-3">
+        <h4 class="fw-bold">VIAJES CHILE</h4>
+        <div class="ms-auto d-flex gap-3">
+            <a href="https://github.com/Frankcisco99/viajesChile" data-bs-toggle="tooltip" data-bs-placement="top" title="Github">
+            <i class="fa-brands fa-github fa-2x"></i>
+            </a>
+            <a href="https://www.linkedin.com/" data-bs-toggle="tooltip" data-bs-placement="top" title="Linkedin">
+            <i class="fa-brands fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://twitter.com" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter">
+            <i class="fa-brands fa-twitter fa-2x"></i>
+            </a>
+            <a href="https://www.facebook.com/" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook">
+            <i class="fa-brands fa-facebook fa-2x"></i>
+            </a>
+        </div>
+        </div>
+    </div>
     </footer>
     <!-- Fin Footer -->
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    <script src="./assets/app.js"></script>
+    <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+    </script>
   </body>
 </html>
