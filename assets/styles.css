@@ -128,6 +128,18 @@ body{
     margin-top: 50px;
 }
 
+.footer{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.redes{
+    /* ms-auto d-flex gap-3 */
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+}
 @media (max-width: 768px) {
     .grilla{
         grid-template-columns: 1fr;
@@ -146,5 +158,13 @@ body{
 
     .grilla-destacados{
         grid-template-columns: 1fr;
+    }
+
+    .footer{
+        flex-direction: column;
+    }
+
+    .redes{
+        margin: auto;
     }
 }
